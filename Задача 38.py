@@ -145,8 +145,6 @@ def change_phone_number(file_name):
         for contact in contact_list:
             line = ' '.join(contact) + '\n'
             file.write(line)
-
-
 def delete_contact(file_name):
     contact_list = read_file_to_list(file_name)
     number_to_change = search_to_modify(contact_list)
